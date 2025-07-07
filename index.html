@@ -1,59 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portofolio Page</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      width: 100%;
-      height: 100%;
-      font-family: system-ui, sans-serif;
-      background-color: #f9f9f9;
-    }
-
-    #loader {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      color: #555;
-      z-index: 999;
-      transition: opacity 0.4s ease;
-    }
-
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-    }
-
-    @media (max-width: 600px) {
-      #loader {
-        font-size: 1rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="loader">Loading page, hang on a sec!</div>
-  
-  <iframe
-    src="https://resilient-smoke-2d7.notion.site/ebd/13568c46e82380e3ae80f9366875cb59"
-    loading="lazy"
-    allowfullscreen
-    onload="document.getElementById('loader').style.opacity = 0; setTimeout(() => { document.getElementById('loader').style.display = 'none'; }, 400);"
-  ></iframe>
+    <div id="hello-page" class="page active">
+        <div class="page-content center">
+            <h1>Hello <span class="wave">👋</span></h1>
+        </div>
+    </div>
+
+    <div id="options-page" class="page">
+        <div class="page-content options-container">
+            <div class="options-content">
+                <h1>What can I help you today? 🤠</h1>
+                <div class="button-group">
+                    <button id="portfolio-btn">Check out my portfolio 📊</button>
+                    <button id="talk-btn">Let's talk! ☎️</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact-page" class="page">
+        <div class="page-content options-container">
+            <div class="options-content">
+                <h1>Contact Me</h1>
+                <div class="button-group">
+                    <a href="https://wa.me/6285156176098" class="contact-btn">
+                        ☎️ WhatsApp
+                    </a>
+                    <a href="mailto:ghiffarsabda@gmail.com" class="contact-btn">
+                        📬 Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="porto-page" class="page">
+        <div class="page-content">
+            <div class="notion-embed-container">
+                <div class="notion-overlay"></div>
+                <iframe src="https://resilient-smoke-2d7.notion.site/ebd/13568c46e82380e3ae80f9366875cb59" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
