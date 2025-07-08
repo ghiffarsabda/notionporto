@@ -1,0 +1,14 @@
+1. create me a pc/mobile friendly website. the entire theme should be in dark mode and minimalistic, a lot like notion.so's type of style
+2. when the user opens it, it says "Hello" in SF Pro and then a waving hand emoji next to it. the whole text should be on the center of the screen
+3. the user then taps/clicks anywhere
+4. it then transitions to the next page called "Options" page
+5. on options page, there is a text that says "What can I help you with today?"
+6. under the text, there are two buttons.
+7. the first button placeholder is "I wanna see your portfolio" and it goes to the next page called "Porto" page.
+8. porto page contains an embededded notion page. 
+here's the embedded notion code:
+<iframe src="https://resilient-smoke-2d7.notion.site/ebd/13568c46e82380e3ae80f9366875cb59" width="100%" height="600" frameborder="0" allowfullscreen />
+9. the second button is "Let's talk!"
+10. if the "Lets talk" button is pressed, it transitions to two other button with their logo.
+11. the two other buttons are contact options. whatsapp and email. provide a logo on each button. these two should be centered
+12. if it chose whatsapp, it should start a chat to 6285156176098 if email then ghiffarsabda@gmail.com 
